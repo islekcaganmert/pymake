@@ -1,0 +1,21 @@
+[project]
+name = "pymake"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+license = {text = "MIT"}
+maintainers = [{name = "Çağan Mert İŞLEK", email = "islekcaganmert@gmail.com"}]
+requires-python = ">=3.9"
+dependencies = ["build==1.2.1", "packaging==24.1", "pyproject_hooks==1.1.0", "pip==24.2"]
+
+[project.urls]
+Donate = "https://www.buymeacoffee.com/islekcaganmert"
+Documentation = "https://github.com/islekcaganmert/pymake/wiki"
+Changes = "https://github.com/islekcaganmert/pymake/commits/master"
+
+[project.scripts]
+pymake = "pymake:main"
+
+[build-system]
+requires = ["setuptools","wheel"]
+build-backend = "setuptools.build_meta"
