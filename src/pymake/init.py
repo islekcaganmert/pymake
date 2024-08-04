@@ -53,7 +53,7 @@ def init(**kwargs):
     for i, j in enumerate(licenses_dict.keys()):
         print(f"{i+1}. {j}")
     print()
-    info['license'] = licenses_dict.keys()[int(input("License: "))-1]
+    info['license'] = [i for i in licenses_dict][int(input("License: "))-1]
     print()
     if not kwargs['no-module']:
         print("Add maintainers in the format: Name <email>")
