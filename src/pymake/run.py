@@ -8,5 +8,5 @@ def run(**kwargs):
         else:
             print("Module is not executable")
     elif 'requirements.txt' in os.listdir():
-        os.system("python3 main.py")
+        os.system("cd src; python3 main.py; cd ..")
     pass
