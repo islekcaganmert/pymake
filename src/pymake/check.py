@@ -55,7 +55,8 @@ def check(**kwargs):
     }
     print('\nModules:')
     all_ok = True
-    modules.pop(os.popen('pwd').read().replace('\n', ''))
+    if os.popen('pwd').read().replace('\n', '') in modules:
+        modules.pop(os.popen('pwd').read().replace('\n', ''))
     for i in modules:
         if i not in dependencies:
             all_ok = False
